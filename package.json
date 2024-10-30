@@ -10,11 +10,22 @@
     "preview": "vite preview",
     "prepare": "husky"
   },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.css": [
+      "postcss --use autoprefixer --write",
+      "tailwindcss -i src/styles/tailwind.css -o public/styles.css --minify"
+    ]
+  },
   "dependencies": {
     "@reduxjs/toolkit": "^2.3.0",
     "@tinymce/tinymce-react": "^5.1.1",
     "appwrite": "^16.0.2",
     "html-react-parser": "^5.1.18",
+    "lint-staged": "^15.2.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.53.1",
