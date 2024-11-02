@@ -23,7 +23,7 @@ export class AuthService {
       }
     }
     catch (error) {
-      throw new error;
+      console.error("🚀 ~ file: auth.js:27 ~ AuthService ~ createAccount ~ error:", error);
     }
   }
 
@@ -33,7 +33,7 @@ export class AuthService {
       return session;
     }
     catch (error) {
-      throw new error;
+      console.error("🚀 ~ file: auth.js:37 ~ AuthService ~ login ~ error:", error);
     }
   }
 
@@ -46,7 +46,7 @@ export class AuthService {
         return null;
       }
     } catch (error) {
-      throw new error;
+      console.error("🚀 ~ file: auth.js:50 ~ AuthService ~ getCurrentUser ~ error:", error);
     }
   }
 
@@ -54,7 +54,7 @@ export class AuthService {
     try {
       await this.account.deleteSessions();
     } catch (error) {
-      throw new error;
+      console.error("🚀 ~ file: auth.js:58 ~ AuthService ~ logOut ~ error:", error);
     }
   }
 };
