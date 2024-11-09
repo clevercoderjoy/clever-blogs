@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { useState } from "react"
 import { useDispatch } from "react-redux";
-import authService from "../appwrite/auth";
-import { login, logout } from "../slices/authSlice";
+import authService from "../../appwrite/auth";
+import { login, logout } from "../../slices/authSlice";
 
 const Home = () => {
 
