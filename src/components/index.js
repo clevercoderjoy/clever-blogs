@@ -6,3 +6,5 @@ import Button from "./button/Button";
 import Container from "./container/Container"
 
 export { Header, Footer, InputField, Logo, Container, Button };
+
+console.log("🚀 ~ file: index.js:10 ~ Button:", Button);
