@@ -1,12 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
-import Home from "../pages/Home";
-import MyBlogs from "../pages/MyBlogs";
-import Blogs from "../pages/Blogs";
-import About from "../pages/About";
-import SingleBlog from "../pages/SingleBlog";
-import NotFoundPage from "../pages/NotFoundPage";
-
+import Home from "../pages/home/Home";
+import Blogs from "../pages/blogs/Blogs";
+import MyBlogs from "../pages/myBlogs/MyBlogs";
+import SingleBlogPage from "../pages/singleBlogPage/SingleBlogPage";
+import About from "../pages/about/About";
+import NotFoundPage from "../pages/notFoundPage/NotFoundPage";
 
 export const router = createBrowserRouter([
   {
@@ -26,7 +25,7 @@ export const router = createBrowserRouter([
           },
           {
             path: "blogs/blogId",
-            element: <SingleBlog />,
+            element: <SingleBlogPage />,
           },
         ]
       },
